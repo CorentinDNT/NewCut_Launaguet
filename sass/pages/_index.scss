@@ -113,27 +113,28 @@
 	flex-wrap: nowrap;
 	color: white;
 	#sir {
+		position: relative;
 		border: 3px solid rgb(46, 49, 231);
 		background-color: rgba(40, 42, 195, 0.2);
 		border-radius: 15px;
 		width: 44%;
-		@include flexMid;
-		flex-direction: column;
-		display: none;
+		left: 100%;
+		transition: all 0.5s;
 		&.show {
-			display: flex;
+			left: 0;
 		}
 	}
+	//bad commit
 	#miss {
+		position: relative;
 		border: 2px solid rgb(155, 45, 199);
 		background-color: rgba(155, 45, 199, 0.2);
 		border-radius: 15px;
 		width: 44%;
-		@include flexMid;
-		flex-direction: column;
-		display: none;
+		right: 100%;
+		transition: all 0.5s;
 		&.show {
-			display: flex;
+			right: 0%;
 		}
 	}
 	.li-title {
@@ -143,6 +144,7 @@
 	ul {
 		line-height: 50px;
 		text-transform: uppercase;
+		text-align: center;
 	}
 	a.middleSlide {
 		position: relative;

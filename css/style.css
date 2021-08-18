@@ -244,32 +244,28 @@ nav #icon {
   color: white;
 }
 #tarif #sir {
+  position: relative;
   border: 3px solid #2e31e7;
   background-color: rgba(40, 42, 195, 0.2);
   border-radius: 15px;
   width: 44%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
+  left: 100%;
+  transition: all 0.5s;
 }
 #tarif #sir.show {
-  display: flex;
+  left: 0;
 }
 #tarif #miss {
+  position: relative;
   border: 2px solid #9b2dc7;
   background-color: rgba(155, 45, 199, 0.2);
   border-radius: 15px;
   width: 44%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
+  right: 100%;
+  transition: all 0.5s;
 }
 #tarif #miss.show {
-  display: flex;
+  right: 0%;
 }
 #tarif .li-title {
   font-size: 2rem;
@@ -278,6 +274,7 @@ nav #icon {
 #tarif ul {
   line-height: 50px;
   text-transform: uppercase;
+  text-align: center;
 }
 #tarif a.middleSlide {
   position: relative;
