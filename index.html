@@ -17,14 +17,14 @@
 			<label class="logo">New Cut </label>
 			<ul id="whereToAddShowClass">
 				<li>
-					<a href="#Accueil" onclick="toggleClass()">Accueil</a>
+					<a href="#Accueil" onclick="toggleClassBurger()">Accueil</a>
 				</li>
-				<li><a href="#A-propos" onclick="toggleClass()">À props</a></li>
-				<li><a href="#tarif" onclick="toggleClass()">Tarifs</a></li>
-				<li><a href="#" onclick="toggleClass()">OÙ me trouver</a></li>
-				<li><a href="#" onclick="toggleClass()">me contacter</a></li>
+				<li><a href="#A-propos" onclick="toggleClassBurger()">À props</a></li>
+				<li><a href="#tarif" onclick="toggleClassBurger()">Tarifs</a></li>
+				<li><a href="#" onclick="toggleClassBurger()">OÙ me trouver</a></li>
+				<li><a href="#" onclick="toggleClassBurger()">me contacter</a></li>
 			</ul>
-			<label id="icon" onclick="toggleClass()">
+			<label id="icon" onclick="toggleClassBurger()">
 				<i class="fas fa-bars"></i>
 			</label>
 		</nav>
@@ -47,28 +47,37 @@
 		<div class="transition">
 			<div class="blackPart"></div>
 			<div id="tarif">
-				<ul class="men">
-					<p>MONSIEUR</p>
+				<a onclick="toggleClassMiss(), toggleClassMister()"
+					><i class="fas fa-arrow-left arrow"></i
+				></a>
+				<ul id="miss">
+					<li class="li-title">MADAME</li>
 
-					<li><a class="middleSlide">Coiffure 15€</a></li>
-					<li><a class="middleSlide">Coiffure + couleur 35€</a></li>
-					<li><a class="middleSlide">Décoloration 30€</a></li>
-					<li><a class="middleSlide">Barbe 10€</a></li>
-					<li>
-						<a class="middleSlide">Décoloration + coiffure + couleur 90€</a>
-					</li>
+					<li><a class="middleSlide">Coiffure 17€</a></li>
+					<li><a class="middleSlide">Brushing * 12€</a></li>
+					<li><a class="middleSlide">couleur ** 23€</a></li>
+					<li><a class="middleSlide">balayage ** 23€</a></li>
+					<li><a class="middleSlide">flash 11€</a></li>
+					<li><a class="middleSlide">mèches ** 40€</a></li>
+					<li><a class="middleSlide">Décoloration** 20€</a></li>
+					<li><a class="middleSlide">gommage ** 20€</a></li>
+					<li><a class="middleSlide">mise en plis ** 15€</a></li>
+					<li><a class="middleSlide">soins spa 5€</a></li>
+					<li><a class="middleSlide">démêlant 2€</a></li>
 				</ul>
-				<ul class="women">
-					<p>MADAME</p>
+				<ul class="show" id="sir">
+					<li class="li-title">MONSIEUR</li>
 
-					<li><a class="middleSlide">Coiffure 15€</a></li>
-					<li><a class="middleSlide">Coiffure + couleur 35€</a></li>
-					<li><a class="middleSlide">Décoloration 30€</a></li>
-					<li><a class="middleSlide">Barbe 10€</a></li>
-					<li>
-						<a class="middleSlide">Décoloration + coiffure + couleur 90€</a>
-					</li>
+					<li><a class="middleSlide">COUPE 15€</a></li>
+					<li><a class="middleSlide">couronne 35€</a></li>
+					<li><a class="middleSlide">bébé 0 à 2 ans 7€</a></li>
+					<li><a class="middleSlide">enfant 3 à 6 ans 10€</a></li>
+					<li><a class="middleSlide">enfant 7 à 12 ans 13€</a></li>
+					<li><a class="middleSlide">enfant de 12 à 17 ans -10%</a></li>
 				</ul>
+				<a onclick="toggleClassMiss(), toggleClassMister()"
+					><i class="fas fa-arrow-right arrow"></i
+				></a>
 			</div>
 			<div class="darkGreyPart"></div>
 		</div>

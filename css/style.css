@@ -9,6 +9,10 @@
     }
 }
 */
+.arrow {
+  font-size: 3rem;
+}
+
 #navbar {
   height: 80px;
   width: 100%;
@@ -236,35 +240,43 @@ nav #icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
   color: white;
 }
-#tarif .men {
+#tarif #sir {
   border: 3px solid #2e31e7;
   background-color: rgba(40, 42, 195, 0.2);
   border-radius: 15px;
   width: 44%;
-  margin: 5px 5px 200px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: none;
 }
-#tarif .women {
+#tarif #sir.show {
+  display: flex;
+}
+#tarif #miss {
   border: 2px solid #9b2dc7;
   background-color: rgba(155, 45, 199, 0.2);
   border-radius: 15px;
   width: 44%;
-  margin: 200px 5px 5px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: none;
 }
-#tarif p {
+#tarif #miss.show {
+  display: flex;
+}
+#tarif .li-title {
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 #tarif ul {
-  line-height: 60px;
+  line-height: 50px;
   text-transform: uppercase;
 }
 #tarif a.middleSlide {
@@ -298,6 +310,10 @@ nav #icon {
 
 body {
   font-family: montserrat;
+}
+
+a {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

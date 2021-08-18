@@ -110,30 +110,38 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: nowrap;
 	color: white;
-	.men {
+	#sir {
 		border: 3px solid rgb(46, 49, 231);
 		background-color: rgba(40, 42, 195, 0.2);
 		border-radius: 15px;
 		width: 44%;
-		margin: 5px 5px 200px 5px;
 		@include flexMid;
 		flex-direction: column;
+		display: none;
+		&.show {
+			display: flex;
+		}
 	}
-	.women {
+	#miss {
 		border: 2px solid rgb(155, 45, 199);
 		background-color: rgba(155, 45, 199, 0.2);
 		border-radius: 15px;
 		width: 44%;
-		margin: 200px 5px 5px 5px;
 		@include flexMid;
 		flex-direction: column;
+		display: none;
+		&.show {
+			display: flex;
+		}
 	}
-	p {
+	.li-title {
 		font-size: 2rem;
+		margin-bottom: 30px;
 	}
 	ul {
-		line-height: 60px;
+		line-height: 50px;
 		text-transform: uppercase;
 	}
 	a.middleSlide {
