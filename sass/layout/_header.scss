@@ -2,6 +2,8 @@
 	height: 80px;
 	width: 100%;
 	background-color: #0c0f11;
+	position: fixed;
+	z-index: 200;
 	ul {
 		float: right;
 		margin-right: 40px;
@@ -91,6 +93,7 @@ nav #icon {
 
 	nav ul.show {
 		left: 0;
+		z-index: 1000;
 	}
 }
 @media (max-width: 680px) {

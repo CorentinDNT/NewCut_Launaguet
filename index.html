@@ -9,27 +9,22 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
 		/>
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
-			$(document).ready(() => {
-				$("#icon").click(() => {
-					$("ul").toggleClass("show");
-				});
-			});
-		</script>
 		<title>New Cut - Coiffure</title>
 	</head>
 	<body>
+		<div id="Accueil"></div>
 		<nav id="navbar">
 			<label class="logo">New Cut </label>
-			<ul>
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#aboutUs">À props</a></li>
-				<li><a href="#tarif">Tarifs</a></li>
-				<li><a href="#">OÙ me trouver</a></li>
-				<li><a href="#">me contacter</a></li>
+			<ul id="whereToAddShowClass">
+				<li>
+					<a href="#Accueil" onclick="toggleClass()">Accueil</a>
+				</li>
+				<li><a href="#A-propos" onclick="toggleClass()">À props</a></li>
+				<li><a href="#tarif" onclick="toggleClass()">Tarifs</a></li>
+				<li><a href="#" onclick="toggleClass()">OÙ me trouver</a></li>
+				<li><a href="#" onclick="toggleClass()">me contacter</a></li>
 			</ul>
-			<label id="icon">
+			<label id="icon" onclick="toggleClass()">
 				<i class="fas fa-bars"></i>
 			</label>
 		</nav>
@@ -38,7 +33,7 @@
 			<h2 id="detailTitle">Le soucis du détail.</h2>
 		</section>
 
-		<div class="aboutUs" id="aboutUs">
+		<div class="aboutUs" id="A-propos">
 			<div class="box">
 				<p>
 					ici une petite description du salon de pourquoi tu aimes tant la
