@@ -9,6 +9,10 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
 		/>
+		<!-- <script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY78jC-922rnejTWwytpJsOyBgb94JXto"
+			type="text/javascript"
+		></script> -->
 		<title>New Cut - Coiffure</title>
 	</head>
 	<body>
@@ -21,8 +25,12 @@
 				</li>
 				<li><a href="#A-propos" onclick="toggleClassBurger()">À props</a></li>
 				<li><a href="#tarif" onclick="toggleClassBurger()">Tarifs</a></li>
-				<li><a href="#" onclick="toggleClassBurger()">OÙ me trouver</a></li>
-				<li><a href="#" onclick="toggleClassBurger()">me contacter</a></li>
+				<li>
+					<a href="#findMe" onclick="toggleClassBurger()">OÙ me trouver</a>
+				</li>
+				<li>
+					<a href="#me-contacter" onclick="toggleClassBurger()">me contacter</a>
+				</li>
 			</ul>
 			<label id="icon" onclick="toggleClassBurger()">
 				<i class="fas fa-bars"></i>
@@ -50,7 +58,7 @@
 				<a class="linkArrow" onclick="toggleClassMiss(), toggleClassMister()"
 					><i class="fas fa-arrow-left arrow"></i
 				></a>
-				<ul id="miss">
+				<ul class="show" id="miss">
 					<li class="li-title">MADAME</li>
 
 					<li><a class="middleSlide">Coiffure 17€</a></li>
@@ -65,7 +73,7 @@
 					<li><a class="middleSlide">soins spa 5€</a></li>
 					<li><a class="middleSlide">démêlant 2€</a></li>
 				</ul>
-				<ul class="show" id="sir">
+				<ul id="sir">
 					<li class="li-title">MONSIEUR</li>
 
 					<li><a class="middleSlide">COUPE 15€</a></li>
@@ -80,12 +88,61 @@
 				></a>
 			</div>
 			<div class="darkGreyPart"></div>
+			<div id="findMe"></div>
 		</div>
 
-		<section>
-			<p>lorem*50</p>
-		</section>
+		<div id="me-trouver">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8805605424327!2d1.4486845557266357!3d43.67145381067347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbeac536752edb7a!2sNew%20Cut!5e0!3m2!1sfr!2sfr!4v1629334205083!5m2!1sfr!2sfr"
+				width="99.9%"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
+		</div>
+
+		<div id="me-contacter">
+			<div
+				class="card"
+				data-tilt
+				data-tilt-speed="800"
+				data-tilt
+				data-tilt-glare
+				data-tilt-max-glare="0.8"
+			>
+				<img src="./img/femme_photo2.jpg" class="card-image"></img>
+				<div class="card-text">
+					<span class="work">Coiffeuse Professionelle</span>
+					<h2>Sandrine COIFFURE</h2>
+					<p>
+						Je suis coifefuse proffessionelle depuis maintenant 10 ans, j'ai toujours aimé les metiers artistiques c'est donc pour cela que j'ai ouver mon salon de coiffure. <br><span id="boldSpan"> En espérant vous voir très bientot !</span>
+					</p>
+				</div>
+			</div>
+			<div
+				class="card"
+				data-tilt
+				data-tilt-speed="800"
+				data-tilt
+				data-tilt-glare
+				data-tilt-max-glare="0.8"
+			>
+				<img src="./img/moi_placeholder.jpg" class="card-image"></img>
+				<div class="card-text">
+					<span class="work">Développeur Web</span>
+					<h2>Corentin DONATO</h2>
+					<p> 
+						Ce site à été développé par corentin, développeur depuis maintenant un an, pour voir son contenu vous pouvez aller sur son <a id="gitLink" href="https://github.com/CorentinDNT">lien gitHub ! </a>
+					</p>
+				</div>
+			</div>
+		</div>
 
 		<script src="./index.js"></script>
+		<script
+			type="text/javascript"
+			src="./components/vanilla-tilt.min.js"
+		></script>
 	</body>
 </html>
