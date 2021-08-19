@@ -1,3 +1,10 @@
 .arrow {
 	font-size: 3rem;
+	margin: 30px;
+}
+
+@media (max-width: 420px) {
+	.linkArrow {
+		display: none;
+	}
 }

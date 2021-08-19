@@ -108,33 +108,36 @@
 #tarif {
 	@include wh(100%);
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	flex-wrap: nowrap;
 	color: white;
+	height: 800px;
 	#sir {
 		position: relative;
 		border: 3px solid rgb(46, 49, 231);
 		background-color: rgba(40, 42, 195, 0.2);
 		border-radius: 15px;
-		width: 44%;
+		width: 0%;
+		height: auto;
 		left: 100%;
 		transition: all 0.5s;
 		&.show {
 			left: 0;
+			width: 50%;
 		}
 	}
-	//bad commit
 	#miss {
 		position: relative;
 		border: 2px solid rgb(155, 45, 199);
 		background-color: rgba(155, 45, 199, 0.2);
 		border-radius: 15px;
-		width: 44%;
+		width: 0%;
+		height: auto;
 		right: 100%;
 		transition: all 0.5s;
 		&.show {
 			right: 0%;
+			width: 50%;
 		}
 	}
 	.li-title {
@@ -165,5 +168,32 @@
 	a.middleSlide:hover:before {
 		visibility: visible;
 		transform: scaleX(1);
+	}
+}
+
+@media (max-width: 420px) {
+	#tarif {
+		@include wh(100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		color: white;
+		height: 100%;
+		#sir {
+			margin: 23% 0;
+			position: static;
+			width: 80%;
+			&.show {
+				width: 80%;
+			}
+		}
+		#miss {
+			position: static;
+			width: 80%;
+			&.show {
+				width: 80%;
+			}
+		}
 	}
 }
